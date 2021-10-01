@@ -18,6 +18,11 @@ int trapped_water(int array[],int size){
 }
 
 int main(){
+    
+    //we can reduce the runtime a lot by adding two lines.
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); 
+    
     int array[] = {1,0,3,4,5,0,5,7,7,8,9,0};
     int size = sizeof(array) / sizeof(int);
     cout << trapped_water(array,size);
